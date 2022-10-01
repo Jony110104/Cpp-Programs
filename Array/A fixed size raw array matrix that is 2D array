@@ -1,0 +1,28 @@
+
+#include <algorithm>
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+auto main() -> int
+{
+    int const nRows = 3;
+    int const nCols = 7;
+    int const TwoDimensionMatrix[nRows][nCols] =
+    {
+        {1,2,3,4,5,6,7},
+        {0},
+        {1},
+
+    };
+    for(int i = 0; i<nRows; ++i){
+        for (int j = 0; j< nCols;  ++j){
+            /// setw 5  is set width library iomanip ( space - - 1 2 3)
+            cout << setw(5) <<" " << TwoDimensionMatrix[i][j];
+        }
+        cout << "\n";
+    }
+
+
+}
+
