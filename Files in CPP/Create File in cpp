@@ -1,0 +1,27 @@
+#include <iostream>
+#include <bits/stdc++.h>
+#include <dirent.h>
+
+using namespace std;
+
+
+void createFileFirstWay(){
+  ofstream MyFile("D:\\Github CPP\\file1.txt");
+  MyFile << "Files can be tricky, but it is fun enough!";
+  MyFile.close();}
+
+
+void createFileTwoWay(){
+    ofstream os("I:\\CPP File\\one.txt");
+    char data[] = "File found in folder I";
+    os.write(data, 5);
+
+}
+
+int main()
+{
+    createFileFirstWay();
+    createFileTwoWay();
+
+    return 0;
+}
